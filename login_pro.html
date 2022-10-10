@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Edu+VIC+WA+NT+Beginner:wght@422&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image:
+                url(https://news.ccc.edu/wp-content/uploads/2021/09/Wright-Engineering-Art.jpg);
+            background-size: cover;
+            background-color: rgb(83, 73, 219);
+            filter: brightness(1.25);
+            /* background-repeat: no-repeat; */
+            bottom: 0;
+        }
+
+        .container {
+            margin-top: 100px;
+            background:
+                linear-gradient(217deg, rgba(0, 127, 255, 1), rgba(195, 177, 16, 0)),
+                linear-gradient(336deg, rgba(255, 247, 0, 1), rgba(255, 0, 0, 0)),
+                radial-gradient(circle at 16% 136%, rgba(201, 236, 235, 0), rgba(0, 0, 0, 0));
+            font-family: 'Edu NSW ACT Foundation', cursive;
+            font-family: 'Edu VIC WA NT Beginner', cursive;
+            /* filter: contrast(580%) brightness(200%);  */
+            border-radius: 3em;
+            border-style: double;
+            border-width: 1em;
+            margin: 0 auto;
+            width: 30%;
+            min-width: 300px;
+            /* height: 50vh; */
+
+
+        }
+
+        .intro1 {
+            margin: 0 auto;
+            padding: 2em;
+            /* display: flex;
+            justify-content: center; */
+        }
+
+        .intro {
+            background: rgb(53, 73, 178);
+        }
+
+        .aiml {
+            margin-left: .6em;
+            margin-right: .6em;
+            display: flex;
+            justify-content: space-between;
+            color: rgb(116, 104, 104);
+
+
+        }
+
+        .e {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            text-transform: uppercase;
+        }
+
+        ion-icon.icon {
+            font-size: 50px;
+            color: white;
+            --ionicon-stroke-width: 40px;
+        }
+
+        input {
+            caret-color: rgb(0, 21, 255);
+            border-radius: 2rem;
+            border-style: outset;
+            border-width: .25em;
+        }
+
+        .f_label {
+            display: block;
+            font-size: 25px;
+            font-weight: bold;
+            color: rgb(243, 227, 7);
+            -webkit-text-stroke-color: 1px rgb(152, 218, 19);
+            text-shadow: 0 0 2px rgb(255, 174, 0);
+            filter: brightness(2);
+        }
+
+        .f_text {
+            display: block;
+            margin-bottom: .75em;
+            width: 100%;
+            padding: .75em;
+        }
+
+
+
+        .nav-menu-link {
+            /* top:10%; */
+            /* position: relative; */
+            display: grid;
+            /* height: 20%; */
+            /* padding: 2rem 3rem; */
+            text-align: center;
+            justify-content: space-around;
+            color: rgb(0, 132, 255);
+        }
+
+        h1.heading {
+
+            text-decoration: underline;
+
+        }
+
+        img.im {
+            min-width: 20%;
+            width: 20%;
+
+
+        }
+
+        .proctor {
+            padding-top: 1rem;
+            /* padding-bottom: 1rem; */
+            font-family: 'Cormorant SC', serif;
+            background: rgb(161, 194, 243);
+            text-align: center;
+            line-height: 1.6em;
+            color: rgb(63, 63, 59);
+
+        }
+
+        .button {
+            color: white;
+            background-color: rgb(77, 59, 193);
+            font-family: 'Mochiy Pop One', sans-serif;
+            font-size: 1em;
+            border-style: outset;
+            border-width: .25em;
+            border-color: rgb(82, 84, 86);
+            cursor: pointer;
+
+
+        }
+        marquee ::selection{
+            color: brown;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="intro">
+        <div class="aiml">
+            <img class="im" src="https://www.dsce.edu.in/images/Home/logo_bottom.png" alt="Logo">
+
+            <a href="front.html">
+                <span class="nav-menu-link">
+                    <ion-icon class="icon" size="large" name="home"></ion-icon>
+                </span>
+
+            </a>
+
+        </div>
+    </div>
+    <div class="proctor">
+        <h1 class="heading">Department of AIML</h1>
+        <h3>Welcome to Student Proctoring System!</h3>
+        <marquee>
+            <p class="para">Enter in the required details to login</p>
+        </marquee>
+    </div>
+
+    <div class="container">
+        <div class="e">
+            <ion-icon class="icon" name="person-circle-outline"></ion-icon>
+        </div>
+        <h1 style=" color: rgb(243, 227, 7);">Login As Proctor</h1>
+        <div class="intro1">
+            <form action=" ">
+                <label class="f_label">UserId:</label>
+                <input type="text" class="f_text" placeholder="Enter UserId" name="username" id="name" required>
+                <label class="f_label">Password : </label>
+                <input type="password" class="f_text" placeholder="Enter Password" name=" " id="pwd1" required>
+                <input type="button" class="button f_text" value="Login" onclick="login()">
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        function login()
+    {
+        
+        var name = document.getElementById("name").value;
+        var pwd1 = document.getElementById("pwd1").value;
+       // var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        
+        if(name =='')
+        {
+            alert("Please enter your email.");
+        }
+        else if(pwd1=='')
+        {
+            alert("Enter the password");
+        }
+        
+        
+        else
+        {
+               
+          alert('A confirmation mail has been sent');
+  //Redirecting to other page or webste code or you can set your own html page.
+          window.location ="proctor.html";
+            }
+    }
+    </script>
+</body>
+
+</html>

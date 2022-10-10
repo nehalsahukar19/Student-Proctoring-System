@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width , initial-scale = 1.0">
+    <title>crud operations</title>
+    <link href="login.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+      <h1 class="heading">DAYANANDA SAGAR COLLEGE OF ENGINEERING</h1>
+      <p class="adress">Shavige Malleshwara Hills, Kumarswamy Layout, Banglore 560 078, Karnataka, India</p>
+      <p class="tel">Tel:+91-80-26662226,26661104, Fax:+91-80-2660789</p>
+      <div class="image">
+        <img src="images/logo.png" alt="Logo">
+      </div>
+      <div class="one">
+          <h2 class="one_one">DEPARTMENT OF ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING</h2>
+          <p class="one_two">email:hod-ai@dayanandasagar.edu</p>
+      </div>
+      <div class="proctor">
+          Proctor dairy
+      </div>
+      <div class="photo">
+        <p >Upload your photo</p>
+        <input type="file" id="photoupload" class="upload"/>
+      </div>
+      <form action="/action_page.php" class="outline">
+        
+        <table class="table1">
+          <div class="student_table">
+            <tr>
+              <td>Student Name</td>
+              <td><input id = "sname" type="text"></td>
+            </tr>
+            <tr>
+              <td>USN</td>
+              <td><input id = "usn" type="text"></td>
+            </tr>
+            <tr>
+              <td>Proctor Name I Semester</td>
+              <td><input id = "ps1" type="text"></td>
+            </tr>
+            <tr>
+              <td>Proctor Name II Semester</td>
+              <td><input id = "ps2" type="text"></td>
+            </tr>
+            <tr>
+              <td>Proctor Name III Semester</td>
+              <td><input id = "ps3" type="text"></td>
+            </tr>
+            <tr>
+              <td>Proctor Name IV Semester</td>
+              <td><input id = "ps4" type="text"></td>
+            </tr>
+            <tr>
+              <td>Proctor Name V Semester</td>
+              <td><input id = "ps5" type="text"></td>
+            </tr>
+            <tr>
+              <td>Proctor Name VI Semester</td>
+              <td><input id = "ps6" type="text"></td>
+            </tr>
+            <tr>
+              <td>Proctor Name VII Semester</td>
+              <td><input id = "ps7" type="text"></td>
+            </tr>
+            <tr>
+              <td>Proctor Name VIII Semester</td>
+              <td><input id = "ps8" type="text"></td>
+            </tr>
+          </div>
+        </table>
+        <hr>
+
+
+            <table class="table2">
+                <tr>    
+                  <td class="row1">Student Name</td>    
+                  <td class="style1"><input type="text" id="stuname" /></td>    
+                </tr> 
+                <tr>
+                  <td rowspan="2" class="row1">Parent Name</td>
+                  <td>Father's Name</td>
+                  <td ><input type="text" id="faname" /></td>
+                </tr>
+                <tr>
+                  <td>Mother's Name</td>
+                  <td><input type="text" id="moname" placeholder="Mother's Name"/></td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="row1">Occupation</td>
+                  <td>Father</td>
+                  <td ><input type="text" id="faocc" /></td>
+                </tr>
+                <tr>
+                  <td>Mother</td>
+                  <td><input type="text" id="moocc" /></td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="row1">Adress</td>
+                  <td>Permanent</td>
+                  <td ><input type="text" id="peradd" /></td>
+                </tr>
+                <tr>
+                  <td>Local</td>
+                  <td><input type="text" id="loadd" /></td>
+                </tr>
+                <tr>
+                  <td rowspan="3" class="row1">Contact number and email-id</td>
+                  <td>Student</td>
+                  <td ><input type="text" id="stucon" /></td>
+                </tr>
+                <tr>
+                  <td>Parent</td>
+                  <td><input type="text" id="parcon" /></td>
+                </tr>
+                <tr>
+                  <td>Guardian</td>
+                  <td><input type="text" id="guacon" /></td>
+                </tr>
+              </table> 
+              <table class="table3">
+                <tr>
+                  <th>Sl no</th>
+                  <th>Course</th>
+                  <th>Percentage </th>
+                  <th>Class</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>SSLC</td>
+                  <td><input type="text" id="per"></td>
+                  <td><input type="text" id="cls"></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Pre-University</td>
+                  <td><input type="text" id="per1"></td>
+                  <td><input type="text" id="cls1"></td>
+                </tr>
+                <tr>
+                  <td rowspan="2">3</td>
+                  <td >CET-Score</td>
+                  <td><input type="text" id="per2"></td>
+                  <td><input type="text" id="cls2"></td>
+                </tr>
+                <tr>
+                  <td >COMED-K Score</td>
+                  <td><input type="text" id="per3"></td>
+                  <td><input type="text" id="cls3"></td>
+                </tr>
+              </table>
+
+              <table class="table4">
+                <h1>Engineering Results</h1>
+                <tr>
+                  <th>Semester</th>
+                  <th>First attempt <br>Class/percentage<br>
+                    Fail :Subject name/s<br>
+                  </th>
+                  <th>Second attempt<br> Class/percentage<br>
+                    Fail :Subject name/s<br>
+                  </th>
+                  <th>Third attempt <br>Class/percentage<br>
+                    Fail :Subject name/s<br>
+                  </th>
+                  <th>Fourth attempt<br> Class/percentage<br>
+                    Fail :Subject name/s<br>
+                  </th>
+                  <th>Active back subjects</th>
+                </tr>
+                <tr>
+                  <td>I</td>
+                  <td><input type="text " id="fir1"></td>
+                  <td><input type="text " id="fir2"></td>
+                  <td><input type="text " id="fir3"></td>
+                  <td><input type="text " id="fir4"></td>
+                  <td><input type="text " id="fir5"></td>
+                </tr>
+                <tr>
+                  <td>II</td>
+                  <td><input type="text " id="fir_1"></td>
+                  <td><input type="text " id="fir_2"></td>
+                  <td><input type="text " id="fir_3"></td>
+                  <td><input type="text " id="fir_4"></td>
+                  <td><input type="text " id="fir_5"></td>
+                </tr>
+                <tr>
+                  <td>III</td>
+                  <td><input type="text " id="fir__1"></td>
+                  <td><input type="text " id="fir__2"></td>
+                  <td><input type="text " id="fir__3"></td>
+                  <td><input type="text " id="fir__4"></td>
+                  <td><input type="text " id="fir__5"></td>
+                </tr>
+                <tr>
+                  <td>IV</td>
+                  <td><input type="text " id="fir___1"></td>
+                  <td><input type="text " id="fir___2"></td>
+                  <td><input type="text " id="fir___3"></td>
+                  <td><input type="text " id="fir___4"></td>
+                  <td><input type="text " id="fir___5"></td>
+                </tr>
+                <tr>
+                  <td>V</td>
+                  <td><input type="text " id="fir_a"></td>
+                  <td><input type="text " id="fir_b"></td>
+                  <td><input type="text " id="fir_c"></td>
+                  <td><input type="text " id="fir_d"></td>
+                  <td><input type="text " id="fir_e"></td>
+                </tr>
+                <tr>
+                  <td>VI</td>
+                  <td><input type="text " id="fir__a"></td>
+                  <td><input type="text " id="fir__b"></td>
+                  <td><input type="text " id="fir__c"></td>
+                  <td><input type="text " id="fir__d"></td>
+                  <td><input type="text " id="fir__e"></td>
+                </tr>
+                <tr>
+                  <td>VII</td>
+                  <td><input type="text " id="fir___a"></td>
+                  <td><input type="text " id="fir___b"></td>
+                  <td><input type="text " id="fir___c"></td>
+                  <td><input type="text " id="fir___d"></td>
+                  <td><input type="text " id="fir___e"></td>
+                </tr>
+                <tr>
+                  <td>VIII</td>
+                  <td><input type="text " id="fir____a"></td>
+                  <td><input type="text " id="fir____b"></td>
+                  <td><input type="text " id="fir____c"></td>
+                  <td><input type="text " id="fir____d"></td>
+                  <td><input type="text " id="fir____e"></td>
+                </tr>
+              </table>
+                <div class="hod">
+                  <p>Dr.Preeti Sathish</p>
+                  <p>Prof. & HOD, AIML Dept.</p>
+                </div>
+
+                <table class="table5">
+                  <h1>Extra Curricular Activities</h1>
+                  <tr>
+                    <th>Sl no</th>
+                    <th>Activity</th>
+                  </tr>
+                  <tr>
+                    <td>1.</td>
+                    <td><input type="text" id="activity1"></td>
+                  </tr>
+                  <tr>
+                    <td>2.</td>
+                    <td><input type="text" id="activity2"></td>
+                  </tr>
+                  <tr>
+                    <td>3.</td>
+                    <td><input type="text" id="activity3"></td>
+                  </tr>
+                </table>
+
+                <table class="table6">
+                  <h1>Competative Exam Details</h1>
+                  <tr>
+                    <th>Exam</th>
+                    <th>Score</th>
+                  </tr>
+                  <tr>
+                    <td>PG CET</td>
+                    <td><input type="text" id="score1"></td>
+                  </tr>
+                  <tr>
+                    <td>Gate</td>
+                    <td><input type="text" id="score2"></td>
+                  </tr>
+                  <tr>
+                    <td>GMAT</td>
+                    <td><input type="text" id="score3"></td>
+                  </tr>
+                  <tr>
+                    <td>GRE</td>
+                    <td><input type="text" id="score4"></td>
+                  </tr>
+                  <tr>
+                    <td>TOEFL</td>
+                    <td><input type="text" id="score5"></td>
+                  </tr>
+                </table>
+
+                <table class="table7">
+                  <h1>Higher Education Details</h1>
+                  <tr>
+                    <th>Sl no</th>
+                    <th>University/College</th>
+                    <th>Course</th>
+                  </tr>
+                  <tr>
+                    <td>1.</td>
+                    <td><input type="text" id="university1"></td>
+                    <td><input type="text" id="course1"></td>
+                  </tr>
+                  <tr>
+                    <td>2.</td>
+                    <td><input type="text" id="university2"></td>
+                    <td><input type="text" id="course2"></td>
+                  </tr>
+                  <tr>
+                    <td>3.</td>
+                    <td><input type="text" id="university3"></td>
+                    <td><input type="text" id="course3"></td>
+                  </tr>
+                </table>
+
+                <table class="table8">
+                  <h1>Employement Details</h1>
+                  <tr>
+                    <th>Sl no</th>
+                    <th>Company</th>
+                    <th>Position</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td><input type="text" id="company1"></td>
+                    <td><input type="text" id="position1"></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td><input type="text" id="company2"></td>
+                    <td><input type="text" id="position2"></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td><input type="text" id="company3"></td>
+                    <td><input type="text" id="position3"></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td><input type="text" id="company4"></td>
+                    <td><input type="text" id="position4"></td>
+                  </tr>
+                </table>
+        </form>
+    </div>
+
+    <hr>
+    <button id="Insbtn"  onclick="AddDocument_customID()">INSERT</button>
+    <button id="Selbtn">SELECT</button>
+    <button id="Updbtn">UPDATE</button>
+    <button id="Delbtn">DELETE</button>
+
+
+
+<script type="module" src="indexxxx.js" ></script>
+
+</body>
+</html>

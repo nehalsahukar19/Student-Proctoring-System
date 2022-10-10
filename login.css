@@ -1,0 +1,300 @@
+label {
+    display: inline-block;
+    width: 500px;
+}
+
+input,
+select {
+    width: 12em;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+    /* border: 1px solid; */
+    border-style: double;
+}
+
+img {
+    width: 80%;
+}
+
+.image {
+    max-width: 300px;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+}
+
+.heading {
+    text-align: center;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.adress {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.tel {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+.one {
+    margin: 0 auto;
+    max-width: 850px;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.one_one {
+    font-weight: 900;
+    font-size: 1.3em;
+}
+
+.one_two {
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.proctor {
+    margin: 0 auto;
+    max-width: 250px;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.8em;
+    padding: 1.2em;
+    font-weight: 900;
+    margin-bottom: 1em;
+}
+
+.photo {
+    max-width: 450px;
+    border: 2px solid;
+    padding: 2em;
+    font-size: 1.2em;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 3em;
+    border-radius: 10px;
+}
+
+.upload {
+    width: 40%;
+}
+
+ion-icon {
+    margin-left: 2rem;
+    font-size: 40px;
+}
+
+/* .student_table{
+    margin: 0 auto;
+    width: 80%;
+} */
+/* .outline{
+    border: 2px solid;
+} */
+/* for title of proctor meeting */
+.tit {
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 3px solid rgb(168, 168, 168);
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: .8rem;
+    margin-bottom: 5em;
+    font-size: 1.1em;
+
+}
+
+input[type=text] {
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+
+td,
+th,
+tr {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px;
+}
+
+td {
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+}
+
+th[sc] .container1 {
+    border: 3px solid;
+}
+
+.table1 {
+    width: 65%;
+    font-size: 1.1em;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+}
+
+.table2 {
+    width: 65%;
+}
+
+.table3 {
+    width: 65%;
+}
+
+.table4 {
+    width: 65%;
+}
+
+.table5 {
+    width: 65%;
+}
+
+.table5 input {
+    width: 20em;
+}
+
+.table5 th {
+    width: 10%;
+}
+
+.table6 {
+    width: 65%;
+}
+
+.table6 input {
+    width: 20em;
+}
+
+.table6 th {
+    width: 10%;
+}
+
+.table7 {
+    width: 65%;
+}
+
+.table7 input {
+    width: 20em;
+}
+
+.table7 th {
+    width: 10%;
+}
+
+.table8 {
+    width: 65%;
+}
+
+.table8 input {
+    width: 20em;
+}
+
+.table8 th {
+    width: 10%;
+}
+
+.hod {
+    text-align: end;
+    margin-right: 4.5em;
+    margin-bottom: 5em;
+    font-size: 1.2em;
+    line-height: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 900px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+
+    .table8 {
+        width: 65%;
+    }
+
+    .table8 input {
+        width: 12em;
+    }
+
+    .table8 th {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .table7 {
+        width: 65%;
+    }
+
+    .table7 input {
+        width: 12em;
+    }
+
+    .table7 th {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .table6 {
+        width: 65%;
+    }
+
+    .table6 input {
+        width: 12em;
+    }
+
+    .table6 th {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .table5 {
+        width: 65%;
+    }
+
+    .table5 input {
+        width: 12em;
+    }
+
+    .table5 th {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
